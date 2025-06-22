@@ -1,10 +1,8 @@
-import os
-
-API_ID = os.environ.get("API_ID")
-API_HASH = os.environ.get("API_HASH")
-BOT_TOKEN = os.environ.get("BOT_TOKEN")
-DATABASE_URL = os.environ.get("DATABASE_URL")
-MUST_JOIN = os.environ.get("MUST_JOIN", "")
+API_ID = 24249014
+API_HASH = "0a8d55a05546869565d1c1ab07e2234f"
+BOT_TOKEN = "7742667419:AAEvIkYBCr1qHVslZVT4fkazgcxgqK5ZX9s"
+DATABASE_URL = "mongodb+srv://zuiiixx:zuiiixx@cluster0.jsrns5e.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+MUST_JOIN = ""  # Or set your channel ID like "@yourchannel"
 
 # Validation
 if not API_ID:
