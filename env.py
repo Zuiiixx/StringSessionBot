@@ -1,14 +1,12 @@
 import os
-from dotenv import load_dotenv
 
-load_dotenv()
+API_ID = os.environ.get("API_ID")
+API_HASH = os.environ.get("API_HASH")
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
+DATABASE_URL = os.environ.get("DATABASE_URL")
+MUST_JOIN = os.environ.get("MUST_JOIN", "")
 
-API_ID = os.getenv("API_ID", "24249014").strip()
-API_HASH = os.getenv("API_HASH", "0a8d55a05546869565d1c1ab07e2234f").strip()
-BOT_TOKEN = os.getenv("BOT_TOKEN", "7742667419:AAEvIkYBCr1qHVslZVT4fkazgcxgqK5ZX9s").strip()
-DATABASE_URL = os.getenv("DATABASE_URL", "mongodb+srv://zuiiixx:zuiiixx@cluster0.jsrns5e.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0").strip()  # MongoDB URL
-MUST_JOIN = os.getenv("MUST_JOIN", "")
-
+# Validation
 if not API_ID:
     raise SystemExit("No API_ID found. Exiting...")
 elif not API_HASH:
